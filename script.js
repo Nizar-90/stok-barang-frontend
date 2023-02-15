@@ -1,5 +1,5 @@
 
-axios.get("http://localhost:3004/data-barang")
+axios.get("http://localhost:3004/api/data-barang")
 .then((response) => {
     let data = response.data;
     console.log(data);
