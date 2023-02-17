@@ -13,7 +13,7 @@ axios.get("https://stokbarang-backend-cqpvntuoja-uc.a.run.app/api/databarang")
             <td class="nama">${data_barang.nama_barang}</td>
             <td class="foto">${data_barang.foto_barang}</td>
             <td class="deskripsi">${data_barang.deskripsi}</td>
-            <td class="jumlah">${data_barang.jumlah}</td>
+            <td class="jumlah">${data_barang.jumlah_barang}</td>
             <td class="harga">${data_barang.harga_barang}</td>
             <td class="btn-act-table"><button class="btn-view">Detail</button></td>
             <td class="btn-act-table"><button class="btn-edit">Edit</button></td>
