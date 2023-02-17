@@ -150,7 +150,7 @@ thead {
 
 table thead tr th{
   font-weight: 600;
-  text-align: center;
+
 
 }
 
@@ -280,4 +280,9 @@ tr:nth-child(even) {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: sans-serif
+}
+
+.detail-barang .bagkanan .foto img{
+  width: 500px;
+  height: 500px;
 }
