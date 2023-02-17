@@ -94,7 +94,7 @@ body {
   display: none;
 }
 
-.data-barang, .kategori-barang {
+.data-barang, .kategori-barang, .riwayat-barang, .detail-data-barang{
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -103,13 +103,19 @@ body {
   position: relative;
 }
 
-.data-barang .content, .kategori-barang .content{
+.data-barang .content, .kategori-barang .content, .riwayat-barang .content {
   
   padding: 1.4rem 7%;
   max-width: 100rem;
 }
 
-.data-barang .content .title, .kategori-barang .content .title {
+.detail-data-barang .content{
+  padding: 7rem 7%;
+  max-width: 100rem;
+  
+}
+
+.data-barang .content .title, .kategori-barang .content .title, .riwayat-barang .content .title, .detail-data-barang .content .nama-barang {
   display: flex;
   padding-bottom: 1em;
   font-size: 3em;
@@ -227,4 +233,51 @@ tr:nth-child(even) {
   -moz-border-radius: 15%;
   -ms-border-radius: 15%;
   -o-border-radius: 15%;
+}
+
+.detail-barang {
+  display: flex;
+  max-width: 100rem;
+}
+
+.detail-barang .bagkiri{
+  padding: 2rem;
+}
+
+.detail-barang .bagkiri div{
+  padding: 3rem 2rem 1.4rem 0.5rem;
+  border-bottom:2px solid #2c272796;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.detail-barang .bagkiri .id{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.detail-barang .bagkiri .deskripsi{
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-barang .bagkiri .jumhar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-barang .bagkiri .jumlah {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.detail-barang .bagkiri .harga {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: sans-serif
 }

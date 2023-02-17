@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Barang</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<!-- navbar start -->
+<nav class="navbar">
+    <a href="/index.html" class="navbar-logo">gudang<span>barang</span></a>
+
+    <div class="navbar-nav">
+        <a href="/index.html">Data Barang</a>
+        <a href="/riwayat.html">Riwayat Barang</a>
+        <a href="/kategori.html">Kategori Barang</a>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+</nav>
+<!-- navbar-end -->
+
+<section class="riwayat-barang" id="list-barang">
+    <main class="content">
+        <div class="title">RIWAYAT</div>
+        <table class="table-riwayat-barang">
+            <thead>
+                <tr>
+                    <th>ID TRANSAKSI</th>
+                    <th>BARANG MASUK</th>
+                    <th>BARANG KELUAR</th>
+                </tr>
+            </thead>
+            <tbody class="isi-riwayat">
+
+            </tbody>
+        </table>
+    </main>
+</section>
+
+
+<script>
+    feather.replace();
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok Barang</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<!-- navbar start -->
+<nav class="navbar">
+<a href="/index.html" class="navbar-logo">gudang<span>barang</span></a>
+
+    <div class="navbar-nav">
+        <a href="/index.html">Data Barang</a>
+        <a href="/riwayat.html">Riwayat Barang</a>
+        <a href="/kategori.html">Kategori Barang</a>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+</nav>
+<!-- navbar-end -->
+
+<section class="detail-data-barang" id="list-barang">
+    <main class="content">
+        <div class="nama-barang">Monitor 24inch</div>
+        <div class="detail-barang">
+            <div class="bagkiri">
+                <div class="id">IB1</div>
+                <div class="deskripsi">Layar FHD (1920x1080) 27” dengan panel IPS untuk reproduksi warna akurat
+                    Teknologi AMD FreeSync™ untuk bermain game yang lancar
+                    Black Stabiliser untuk daya pandang lebih baik di tempat gelap
+                    OnScreen Control untuk kemudahan konfigurasi layar</div>
+                <div class="jumhar">
+                    <div class="jumlah">JUMLAH : 34</div>
+                    <div class="harga">RP.12000000</div>
+                </div>
+
+            </div>
+            <div class="bagkanan">
+                <div class="foto"><img src="https://www.lg.com/id/images/monitor/md06204777/350.jpg" alt="foto monitor"></div>
+            </div>
+        </div>
+    </main>
+</section>
+
+
+<script>
+    feather.replace();
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
