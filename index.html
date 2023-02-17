@@ -7,30 +7,85 @@
     <title>Stok Barang</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="title">DATA BARANG</div>
-    <table class="data-barang">
-        <thead>
-            <tr>
-                <th>id</th>
-                <th>nama_barang</th>
-                <th>foto_barang</th>
-                <th>deskripsi</th>
-                <th>jumlah</th>
-                <th>harga_barang</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-</div>
+
+<!-- navbar start -->
+<nav class="navbar">
+<a href="#" class="navbar-logo">gudang<span>barang</span></a>
+
+    <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#">Data Barang</a>
+        <a href="#">Riwayat Barang</a>
+        <a href="#">Kategori Barang</a>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+</nav>
+<!-- navbar-end -->
+
+<section class="data-barang" id="list-barang">
+    <main class="content">
+        <div class="title">DATA BARANG</div>
+        <table class="table-data-barang">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nama_barang</th>
+                    <th>foto_barang</th>
+                    <th>deskripsi</th>
+                    <th>jumlah</th>
+                    <th>harga_barang</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tbody">
+                    <td class="id">id dami 1</td>
+                    <td class="nama">nama dami 1</td>
+                    <td class="foto">foto dami 1</td>
+                    <td class="deskripsi">deskripsi dami 1</td>
+                    <td class="jumlah">jumlah dami 1</td>
+                    <td class="harga">harga dami 1</td>
+                </tr>
+                <tr class="tbody">
+                    <td class="id">id dami 2</td>
+                    <td class="nama">nama dami 2</td>
+                    <td class="foto">foto dami 2</td>
+                    <td class="deskripsi">deskripsi dami 2</td>
+                    <td class="jumlah">jumlah dami 2</td>
+                    <td class="harga">harga dami 2</td>
+                </tr>
+                <tr class="tbody">
+                    <td class="id">id dami 3</td>
+                    <td class="nama">nama dami 3</td>
+                    <td class="foto">foto dami 3</td>
+                    <td class="deskripsi">deskripsi dami 3</td>
+                    <td class="jumlah">jumlah dami 3</td>
+                    <td class="harga">harga dami 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</section>
 
 
-
+<script>
+    feather.replace();
+</script>
 <script src="script.js"></script>
 </body>
 </html>
