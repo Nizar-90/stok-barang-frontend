@@ -25,17 +25,20 @@ axios.get("https://stokbarang-backend-cqpvntuoja-uc.a.run.app/api/databarang")
 
 axios.get("https://stokbarang-backend-cqpvntuoja-uc.a.run.app/api/kategori")
 .then((response) => {
-    let dataKategori = response.dataKategori;
+    let dataKategori = response.data.data;
     console.log(dataKategori);
 
     let htmlKategori = "";
 
-    data.forEach(kategori_barang => {
+    dataKategori.forEach(kategori_barang => {
         htmlKategori +=`
         <tr class="tbody" >
             <td class="id-kategori">${kategori_barang.id_kategori}</td>
             <td class="kategori">${kategori_barang.kategori }</td>
             <td class="deskripsi">${kategori_barang.deskripsi }</td>
+            <td class="btn-act-table"><a href="detailDataBarang.html"><button class="btn-view">Detail</button></a></td>
+            <td class="btn-act-table"><button class="btn-edit">Edit</button></td>
+            <td class="btn-act-table"><button class="btn-delete">Delete</button></td>
         </tr>`
     });
     document.querySelector(".isi-kategori").innerHTML = htmlKategori;
