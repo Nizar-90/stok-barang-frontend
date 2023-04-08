@@ -13,8 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
 
@@ -35,33 +35,35 @@
 </nav>
 <!-- navbar-end -->
 
-<section class="detail-data-barang" id="list-barang">
-    <main class="content">
-        <div class="nama-barang">Monitor 24inch</div>
-        <div class="detail-barang">
-            <div class="bagkiri">
-                <div class="id">IB1</div>
-                <div class="deskripsi">Layar FHD (1920x1080) 27” dengan panel IPS untuk reproduksi warna akurat
-                    Teknologi AMD FreeSync™ untuk bermain game yang lancar
-                    Black Stabiliser untuk daya pandang lebih baik di tempat gelap
-                    OnScreen Control untuk kemudahan konfigurasi layar</div>
-                <div class="jumhar">
-                    <div class="jumlah">JUMLAH : 34</div>
-                    <div class="harga">RP.12000000</div>
-                </div>
-
-            </div>
-            <div class="bagkanan">
-                <div class="foto"><img src="img/monitor.jpg" alt="foto monitor"></div>
-            </div>
-        </div>
-    </main>
+<section class="data-barang" id="list-barang">
+   <main class="content">
+      <div class="title">TAMBAH DATA BARANG</div>
+      <form action="" method="post" id="my-form">
+         <h6>Id Barang</h6>
+         <input type="text" class="inputIdBarang">
+         <h6>Id Kategori</h6>
+         <input type="text" class="inputIdKategori">
+         <h6>Nama Barang</h6>
+         <input type="text" class="inputNamaBarang">
+         <h6 >Foto Barang</h6>
+         <input type="file" class="inputFotoBarang">
+         <h6>Masukan Deskripsi Barang</h6>
+         <input type="text" class="inputDeskripsi" size="50">
+         <h6>Masukan Jumlah Barang</h6>
+         <input type="number" class="inputJumlahBarang">
+         <h6>Harga Barang (Rp.)</h6>
+         <input type="text"class="hargaBarang" >
+         <h6>Created_At</h6>
+         <input type="datetime-local" class="CreatedAt">
+         <h6>Updated_At</h6>   
+         <input type="datetime-local" class="UpdatedAt">
+         <button type="submit">Kirim Data</button>
+      </form>
+   </main>
 </section>
 
 
-<script>
-    feather.replace();
-</script>
-<script src="js/script.js"></script>
+
+<script src="js/dataBarang.js"></script>
 </body>
 </html>

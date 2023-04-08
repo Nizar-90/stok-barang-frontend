@@ -13,10 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <script src="https://unpkg.com/feather-icons"></script>
-
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
 </head>
 <body>
 
@@ -29,11 +28,11 @@
         <a href="riwayat.html">Riwayat Barang</a>
         <a href="kategori.html">Kategori Barang</a>
     </div>
-
+<!-- 
     <div class="navbar-extra">
         <a href="#" id="search"><i data-feather="search"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-    </div>
+    </div> -->
 </nav>
 <!-- navbar-end -->
 
@@ -52,13 +51,22 @@
 
             </tbody>
         </table>
+
+        <form action="" method="post" id="formKategori">
+
+            <h6>Id Kategori</h6>
+            <input type="text" id="inputIdKategori">
+            <h6>Nama Kategori</h6>
+            <input type="text" id="inputKategori">
+            <h6>Masukan Deskripsi Barang</h6>
+            <input type="text" id="inputDeskripsi" size="50">
+            <button type="submit">Kirim Data</button>
+         </form>
     </main>
 </section>
 
 
-<script>
-    feather.replace();
-</script>
-<script src="js/script.js"></script>
+
+<script src="js/kategori.js"></script>
 </body>
 </html>

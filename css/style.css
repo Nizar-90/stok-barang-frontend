@@ -94,16 +94,15 @@ body {
   display: none;
 }
 
-.data-barang, .kategori-barang, .riwayat-barang, .detail-data-barang{
+.data-barang, .kategori-barang, .riwayat-barang, .detail-data-barang .tambah-data-barang{
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/header-bg.jpeg.jpg");
   position: relative;
 }
 
-.data-barang .content, .kategori-barang .content, .riwayat-barang .content {
+.data-barang .content, .kategori-barang .content, .riwayat-barang .content, .tambah-data-barang .content {
   
   padding: 1.4rem 7%;
   max-width: 100rem;
@@ -115,7 +114,7 @@ body {
   
 }
 
-.data-barang .content .title, .kategori-barang .content .title, .riwayat-barang .content .title, .detail-data-barang .content .nama-barang {
+.data-barang .content .title, .kategori-barang .content .title, .riwayat-barang .content .title, .detail-data-barang .content .nama-barang .tambah-data-barang .content .title {
   display: flex;
   padding-bottom: 1em;
   font-size: 3em;
@@ -197,7 +196,7 @@ tr:nth-child(even) {
   -o-border-radius: 25%;
 }
 
-.btn-delete{
+#btn-delete{
   background-color: red;
   color: var(--white);
   padding: 10px;
@@ -217,16 +216,18 @@ tr:nth-child(even) {
   -o-border-radius: 15%;
 }
 
-.btn-edit:hover{
+.btn-edit:hover, input[type=submit]{
+  color: white;
+  padding: 5px;
   background-color: rgb(74, 177, 74);
-  border-radius: 15%;
-  -webkit-border-radius: 15%;
-  -moz-border-radius: 15%;
-  -ms-border-radius: 15%;
-  -o-border-radius: 15%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
-.btn-delete:hover{
+#btn-delete:hover{
   background-color: rgb(160, 0, 0);
   border-radius: 15%;
   -webkit-border-radius: 15%;
@@ -234,6 +235,28 @@ tr:nth-child(even) {
   -ms-border-radius: 15%;
   -o-border-radius: 15%;
 }
+
+form{
+}
+
+input{
+  margin: 2px 0 20px;
+  padding: 2px;
+  display: block;
+}
+input[type=text],[type=number]{
+  border: #222 ridge 1px;
+}
+
+.foto-barang{
+  width: 50px;
+}
+
+
+/* input[type=text].inputDeskripsi{
+  width: 250px;
+  height: 100px;
+} */
 
 .detail-barang {
   display: flex;
