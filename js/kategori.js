@@ -1,4 +1,4 @@
-API_KATEGORIBARANG = ("http://localhost:3004/api/kategori")
+API_KATEGORIBARANG = ("https://databarang.hadinizar.com/api/kategori")
 
 axios.get(API_KATEGORIBARANG)
 .then((response) => {

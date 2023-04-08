@@ -1,4 +1,4 @@
-API_DATABARANG = "http://localhost:3004/api/data-barang";
+API_DATABARANG = "https://databarang.hadinizar.com/api/data-barang";
 
 // const deleteDatabarang = (id) => {
 //     axios.delete(API_DATABARANG+id)
