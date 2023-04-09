@@ -15,7 +15,7 @@ axios.get(API_KATEGORIBARANG)
             <td class="deskripsi">${kategori_barang.deskripsi }</td>
             <td class="btn-act-table"><a href="detailDataBarang.html"><button class="btn-view">Detail</button></a></td>
             <td class="btn-act-table"><button class="btn-edit">Edit</button></td>
-            <td class="btn-act-table"><button class="btn-delete">Delete</button></td>
+            <td class="btn-act-table"><button onclick='deleteData(${kategori_barang.id_kategori})' class="btn-delete">Delete</button></td>
         </tr>`
     });
     document.querySelector(".isi-kategori").innerHTML = htmlKategori;
@@ -50,3 +50,18 @@ form.addEventListener('submit', function(event) {
 	});
 });
 
+
+const deleteData = (id) => {
+    fetch(API_KATEGORIBARANG+`/${id}`, {
+      method: 'DELETE'
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      console.log('Data deleted successfully');
+    })
+    .catch(error => {
+      console.error('Error deleting data:', error);
+    });
+  };

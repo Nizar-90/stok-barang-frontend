@@ -1,16 +1,6 @@
 API_DATABARANG = "https://databarang.hadinizar.com/api/data-barang";
 
-// const deleteDatabarang = (id) => {
-//     axios.delete(API_DATABARANG+id)
-//     .then(response => {
-//       location.reload();
-//       console.log(response);
-//     })
-//     .catch((error) => console.log('ada error', error));
-//   };
 
-//   let deleteBarang = document.getElementById('btn-delete');
-//   deleteBarang.onClick = deleteDatabarang;
 
 
 
@@ -31,9 +21,11 @@ axios.get(API_DATABARANG)
             <td id="deskripsi">${data_barang.deskripsi}</td>
             <td id="jumlah">${data_barang.jumlah}</td>
             <td id="harga">${data_barang.harga_barang}</td>
+            <td id="createdAt">${data_barang.created_at}</td>
+            <td id="updatedAt">${data_barang.updated_at}</td>
             <td class="btn-act-table"><a href="detailDataBarang.html"><button class="btn-view">Detail</button></a></td>
             <td class="btn-act-table"><button class="btn-edit">Edit</button></td>
-            <td class="btn-act-table"><button id="btn-delete">Delete</button></td>
+            <td class="btn-act-table"><button onclick='deleteData(${data_barang.id_barang})' id="btn-delete">Delete</button></td>
         </tr>`
     });
     document.querySelector(".isi-data-barang").innerHTML = htmlBarang;
@@ -74,7 +66,20 @@ form.addEventListener('submit', function(event) {
 });
 
 
-
-
+const deleteData = (id) => {
+    fetch(API_DATABARANG+`/${id}`, {
+      method: 'DELETE'
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      console.log('Data deleted successfully');
+    })
+    .catch(error => {
+      console.error('Error deleting data:', error);
+    });
+  };
+  
 
 
