@@ -1,5 +1,6 @@
 API_KATEGORIBARANG = ("https://databarang.hadinizar.com/api/kategori")
 
+// GET DATA KATEGORI START==========================
 axios.get(API_KATEGORIBARANG)
 .then((response) => {
     let dataKategori = response.data;
@@ -20,7 +21,10 @@ axios.get(API_KATEGORIBARANG)
     });
     document.querySelector(".isi-kategori").innerHTML = htmlKategori;
 })
+// GET DATA KATEGORI END==============================
 
+
+// POST DATA KATEGORI START==========================
 const form = document.getElementById('formKategori');
 form.addEventListener('submit', function(event) {
 	event.preventDefault();
@@ -49,13 +53,15 @@ form.addEventListener('submit', function(event) {
 		alert('Terjadi kesalahan pada server');
 	});
 });
+// POST DATA KATEGORI END==================================
 
-
+// DELETE DATA KATEGORI START===============================
 const deleteData = (id) => {
     fetch(API_KATEGORIBARANG+`/${id}`, {
       method: 'DELETE'
     })
     .then(response => {
+      location.reload()
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -65,3 +71,8 @@ const deleteData = (id) => {
       console.error('Error deleting data:', error);
     });
   };
+// DELETE DATA KATEGORI END==================================
+
+//UPDATE DATA KATEGORI START=================================
+
+//UPDATE DATA KATEGORI END===================================

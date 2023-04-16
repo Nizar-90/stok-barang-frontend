@@ -56,6 +56,7 @@
 
             </tbody>
         </table>
+        <button onclick="tambahBarang()">Tambah Data</button>
 
         <form action="" method="post" id="formData">
             <h6>Id Barang</h6>
@@ -79,7 +80,28 @@
             <button type="submit">Kirim Data</button>
          </form>
 
-          
+         <form id="formUpdateData">
+            <h6>Id Barang</h6>
+            <input type="text" id="updateIdBarang">
+            <h6>Id Kategori</h6>
+            <input type="text" id="updateIdKategori">
+            <h6>Nama Barang</h6>
+            <input type="text" id="updateNamaBarang">
+            <h6 >Foto Barang</h6>
+            <input type="file" id="updateFotoBarang">
+            <h6>Masukan Deskripsi Barang</h6>
+            <input type="text" id="updateDeskripsi" size="50">
+            <h6>Masukan Jumlah Barang</h6>
+            <input type="text" id="updateJumlahBarang">
+            <h6>Harga Barang (Rp.)</h6>
+            <input type="text"id="updateHargaBarang" >
+            <h6>Created_At</h6>
+            <input type="datetime-local" id="updateCreatedAt">
+            <h6>Updated_At</h6>   
+            <input type="datetime-local" id="UpdatedAt">
+            <button type="submit">Kirim Data</button>
+            </form>
+
 
     </main>
 </section>

@@ -22,3 +22,5 @@ axios.get("http://localhost:3004/api/riwayat/")
     document.querySelector(".isi-riwayat").innerHTML = htmlRiwayat;
 })
 
+
+

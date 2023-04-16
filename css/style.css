@@ -236,7 +236,8 @@ tr:nth-child(even) {
   -o-border-radius: 15%;
 }
 
-form{
+#formData{
+  display: none;
 }
 
 input{
